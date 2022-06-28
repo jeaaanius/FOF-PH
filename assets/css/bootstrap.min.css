@@ -54,6 +54,61 @@ img {
     border-style: none
 }
 
+label {
+    display: inline-block;
+    margin-bottom: .5rem
+}
+
+button {
+    border-radius: 0
+}
+
+button:focus {
+    outline: 1px dotted;
+    outline: 5px auto -webkit-focus-ring-color
+}
+
+button,input,optgroup,select,textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit
+}
+
+button,input {
+    overflow: visible
+}
+
+button,select {
+    text-transform: none
+}
+
+[role=button] {
+    cursor: pointer
+}
+
+select {
+    word-wrap: normal
+}
+
+[type=button],[type=reset],[type=submit],button {
+    -webkit-appearance: button
+}
+
+[type=button]:not(:disabled),[type=reset]:not(:disabled),[type=submit]:not(:disabled),button:not(:disabled) {
+    cursor: pointer
+}
+
+[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner {
+    padding: 0;
+    border-style: none
+}
+
+textarea {
+    overflow: auto;
+    resize: vertical
+}
+
 .h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6 {
     margin-bottom: .5rem;
     font-weight: 500;
@@ -637,4 +692,11 @@ img {
         flex: 0 0 41.666667%;
         max-width: 41.666667%
     }
+
+    .col-xl-8 {
+        -ms-flex: 0 0 66.666667%;
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%
+    }
+
 }
