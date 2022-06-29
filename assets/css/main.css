@@ -1561,7 +1561,46 @@ h1,h2,h3,h4,h5,h6 {
 
 
 /* =========== Partners CSS =========== */
+.partners-with-desc .partners-img{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+}
 
+.partners-with-desc img {
+    width: 100%;
+    margin: 0;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+
+.partners-with-desc h2 {
+    text-align: center;
+    padding-top: 40px;
+    width: 100%;
+    font-size: 38px;
+    font-weight: 700;
+    color: #255946;
+    font-family: var(--secondary-font);
+}
+
+.partners-with-desc h4 {
+    text-align: center;
+}
+
+.partners-with-desc p {
+    text-align: center;
+}
+
+
+
+
+/* ======== swiper partners =========== */
 .swiper {
     margin: auto;
     width: 60%;
@@ -1572,7 +1611,7 @@ h1,h2,h3,h4,h5,h6 {
     text-align: center;
     padding-top: 40px;
     width: 100%;
-    font-size: 38px;
+    font-size: 18px;
     font-weight: 700;
     color: #255946
 }
