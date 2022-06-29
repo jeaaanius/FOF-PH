@@ -1268,7 +1268,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .header-image .header-container {
-    background: url('/assets/images/header-image-dark.jpg');
+    background: url('../../assets/images/header-image-dark.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     top: 0;
