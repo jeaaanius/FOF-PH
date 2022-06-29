@@ -2272,6 +2272,49 @@ h1,h2,h3,h4,h5,h6 {
         font-size: 24px
     }
 }
+
+.about-caption .thm-btn {
+    margin: auto;
+    width: 60%;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    display: block;
+    font-family: var(--secondary-font);
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 22px;
+    color: #1f4e3d;
+    background-color: var(--thm-primary);
+}
+
+
+.about-caption .thm-btn:hover {
+    background-color: #255946;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .about-caption .thm-btn {
+        font-size: 16px
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .about-caption .thm-btn{
+        font-size: 12px
+    }
+}
+
+@media (max-width: 575px) {
+    .about-caption h3 {
+        text-align: left;
+        font-size: 8px
+    }
+}
+
+
 .hovereffect {
   width: 100%;
   height: 100%;
@@ -2355,8 +2398,6 @@ h1,h2,h3,h4,h5,h6 {
 .img-responsive{
     border-radius: 10px;
 }
-
-
 
 @media (min-width: 1200px){
 .projects-one {
