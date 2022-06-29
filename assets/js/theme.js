@@ -84,5 +84,49 @@
                 }
             }
         });
+        $(window).on("load", function() {
+            if ($("#teams__thumb").length) {
+                let teamsThumb = new Swiper("#teams__thumb",{
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                    speed: 1400,
+                    watchSlidesVisibility: true,
+                    watchSlidesProgress: true,
+                    autoplay: {
+                        delay: 5000
+                    }
+                });
+                let teamsMeta = new Swiper("#teams__meta",{
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                    speed: 1400,
+                    watchSlidesVisibility: true,
+                    watchSlidesProgress: true,
+                    autoplay: {
+                        delay: 5000
+                    }
+                });
+                let teamsCarousel = new Swiper("#teams__carousel",{
+                    observer: true,
+                    observeParents: true,
+                    speed: 1400,
+                    mousewheel: true,
+                    slidesPerView: 1,
+                    autoplay: {
+                        delay: 5000
+                    },
+                    pagination: {
+                        el: "#teams__swiper-pagination",
+                        type: "bullets",
+                        clickable: true
+                    },
+                    thumbs: {
+                        swiper: teamsThumb
+                    }
+                });
+                teamsCarousel.controller.control = teamsMeta;
+                teamsMeta.controller.control = teamsCarousel;
+            }
+        });
     }
 )(jQuery);
