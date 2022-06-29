@@ -1526,6 +1526,15 @@ h1,h2,h3,h4,h5,h6 {
     color: #255946
 }
 
+.block-title1 a {
+    margin: 0;
+    font-family: var(--secondary-font);
+    text-decoration: underline;
+    font-size: 18px;
+    font-weight: 700;
+    color: #255946
+}
+
 @media(min-width:1440px) {
     .block-title1 h3 {
         font-size: 46px
