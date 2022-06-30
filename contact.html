@@ -97,14 +97,14 @@
      </div>
     </div>
     <!-- Note: insert Javascript pa -->
-    <div class="col-sm-12 col-md-12 col-lg-6 col-xl-8">
-     <form action="#" class="contact-one__form contact-form-validated">
+    <div class="col-sm-12 col-md-12 col-lg-6 col-xl-8" >
+     <form action="?" id="contact-form" class="contact-one__form contact-form-validated" method="get" name="email-form"> 
       <div class="row">
        <div class="col-lg-6">
         <input type="text" name="name" placeholder="Full Name">
        </div>
        <div class="col-lg-6">
-        <input type="text" name="email" placeholder="Email Address">
+        <input type="text" name="email" placeholder="Email Address" required>
        </div>
        <div class="col-lg-12">
         <textarea name="message" placeholder="Write Message"></textarea>
@@ -114,11 +114,27 @@
        </div>
       </div>
      </form>
+     <!-- Hidden Div -->
+        <div class="hidden-div" id="hidden-div" style="display: none;" >
+          <img class="hidden-div-img" src="assets/images/contacts-check.gif" alt="" style="height: 50px; width: 50px;">
+            <p class="hidden-div-p">Thank you for your inquiry! We will get back to you as soon as we can.</p>
+        </div>
     </div>
    </div>
   </div>
  </section>
 <!--Contact End -->
+
+<script>
+  var showHidden = document.getElementById("hidden-div");
+  document.forms['email-form'].addEventListener('submit', function (event) {
+      // Do something with the form's data here
+      this.style['display'] = 'none';
+      showHidden.style.display = 'block';
+      event.preventDefault();/*w  w w.  j av  a2s.c  o  m*/
+  });
+
+</script> 
 
  <!-- Footer Start -->
  <footer class="site-footer">
