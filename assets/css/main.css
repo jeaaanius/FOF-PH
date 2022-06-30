@@ -2431,7 +2431,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .img-responsive{
     border-radius: 10px;
-    margin-left: -15px;
+    width: 100%;
 }
 
 @media (min-width: 1200px){
@@ -3429,7 +3429,7 @@ blockquote span{
     }
 }
 .blog-sidebar__tags{
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(-42.47%, rgba(253,237,202,0)), to(rgba(255,206,103,0.22)));
+    background: #f4f4f4;
     border-radius:5px;
     padding:30px;
     margin-bottom:30px
@@ -3465,7 +3465,7 @@ blockquote span{
     color:var(--thm-base)
 }
 .blog-sidebar__posts{
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(-42.47%, rgba(255,206,103,0.22)), to(rgba(253,237,202,0)));
+    background: #f4f4f4;
     border-radius:5px;
     margin-bottom:30px;
     padding:30px;
