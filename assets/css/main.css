@@ -2983,3 +2983,205 @@ blockquote span{
         font-size: 70px
     }
 }
+
+/*Donations Page*/
+
+.block-title.text-center .block-title__image {
+    margin-left: auto;
+    margin-right: auto
+}
+
+.donations-one {
+    padding-bottom: 60px;
+    position: relative
+}
+
+.donations__slogan {
+    margin-bottom: -16px;
+    padding-bottom: 70px;
+    background-color: #F6F5F2
+}
+
+@media(min-width: 1200px) {
+    .donations__slogan {
+        margin-top:-20px;
+    }
+}
+
+@media(min-width: 992px) {
+    .donations__slogan i {
+        font-size:60px;
+        margin-right: 30px
+    }
+}
+
+@media(min-width: 1200px) {
+    .donations__slogan i {
+        margin-right:45px
+    }
+}
+
+.donations__slogan h3 {
+    font-size: 20px;
+    color: var(--thm-green);
+    margin-top: 55px;
+    font-weight: 800
+}
+
+@media(min-width: 1200px) {
+    .donations__slogan h3 {
+        font-size:30px;
+        margin-bottom: 20px
+    }
+}
+
+.donations__slogan p {
+    margin: 0;
+    line-height: 2.125
+}
+
+@media(min-width: 1200px) {
+    .donations__slogan p {
+        max-width:670px
+    }
+}
+
+.donations__slogan-main {
+    text-align: center
+}
+
+@media(min-width: 992px) {
+    .donations__slogan-main {
+        display:-webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        text-align: left;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center
+    }
+}
+
+.donations__slogan-image {
+    margin-top: 70px;
+    position: relative
+}
+
+@media(min-width: 768px) {
+    .donations__slogan-image {
+        max-width:270px;
+        margin-left: auto;
+        margin-right: auto
+    }
+}
+
+@media(min-width: 768px) {
+    .donations__slogan-image::before {
+        content:"";
+        width: 20px;
+        height: 100%;
+        background-color: var(--thm-primary);
+        border-radius: 5px;
+        position: absolute;
+        top: 0;
+        right: 100%;
+        margin-right: 50px
+    }
+}
+
+.donations__slogan-image>img {
+    display: block;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%
+}
+
+.donations-card {
+    position: relative;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 30px
+}
+
+.donations-card__image {
+    position: relative;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    overflow: hidden
+}
+
+.donations-card__image>img {
+    width: 100%;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: -webkit-transform 500ms ease;
+    transition: -webkit-transform 500ms ease;
+    transition: transform 500ms ease;
+    transition: transform 500ms ease,-webkit-transform 500ms ease
+}
+
+.donations-card:hover .donations-card__image>a {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0)
+}
+
+.donations-card:hover .donations-card__image>img {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05)
+}
+
+.donations-card__content {
+    -webkit-box-shadow: 0 10px 60px 0 rgba(0,0,0,.05);
+    box-shadow: 0 10px 60px 0 rgba(0,0,0,.05);
+    background-color: #fff;
+    padding-left: 25px;
+    padding-right: 25px;
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px
+}
+
+@media(min-width: 768px) {
+    .donations-card__content {
+        padding:40px
+    }
+}
+
+.donations-card__content h3 {
+    color: #255946;
+    font-size: 20px;
+    line-height: 1.417;
+    margin: 0;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 15px
+}
+
+@media(min-width: 768px) {
+    .donations-card__content h3 {
+        font-size:22px
+    }
+}
+
+@media(min-width: 992px) {
+    .donations-card__content h3 {
+        font-size:24px
+    }
+}
+
+.donations-card__content a {
+    color: var(--thm-color);
+    text-decoration: underline;
+}
+
+.donations-two {
+    border-top: 1px solid #e9e7e2;
+    padding-top: 80px;
+    padding-bottom: 50px
+}
