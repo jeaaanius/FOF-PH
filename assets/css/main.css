@@ -2431,6 +2431,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .img-responsive{
     border-radius: 10px;
+    margin-left: -15px;
 }
 
 @media (min-width: 1200px){
