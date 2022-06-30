@@ -26,6 +26,9 @@
 
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
 
+ <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 </head>
 <body>
 <div class="page-wrapper">
@@ -41,7 +44,7 @@
       <a href="index.html">Home</a>
      </li>
      <li>
-        <a href="projects.html">Projects</a>
+        <a href="projects.html" class="active">Projects</a>
      </li>
      <li>
       <a href="donate.html">Donate</a>
@@ -69,7 +72,7 @@
  <!-- Projects Start -->
  <section class="page-header">
   <div class="page-header__bg" style="background-image: url('assets/media/Projects/Project Sagip/Bohol Documentation/269767437_10227783762158372_7731652127476221498_n.jpeg');"></div>
-  <div class="container">
+  <div class="container" data-aos="fade-up" data-aos-duration="800">
    <ul class="thm-breadcrumb list-unstyled">
     <li><a href="index.html">Home</a></li>
     <li>/</li>
@@ -79,7 +82,7 @@
   </div>
  </section>
 
-<div class="projects-one">
+<div class="projects-one" data-aos="zoom-in" data-aos-duration="1000">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12 col-md-6 col-lg-4">
@@ -152,7 +155,7 @@
                                   <div class="img d-flex align-items-center justify-content-center rounded">
                                 <img class="img-responsive" src="assets/media/Projects/Kids for Kids x FOF PH Documentation/Sagip.jpeg" alt="">
                                 <div class="hover-state">
-                                        <a href="projects.html"><span class="ion-ios-search"></span></a>
+                                        <a href="project-sagip.html"><span class="ion-ios-search"></span></a>
                                     </div>
                                   </div>
                                   <div class="text pt-3 w-100 text-center">
@@ -290,6 +293,9 @@
 <!-- JQuery Plugins -->
 <script src="assets/js/jquery-3.5.1.min.js"></script>
 <script src="assets/js/theme.js"></script>
+<script>
+  AOS.init();
+</script>
 
 </body>
-</html>
+</html
